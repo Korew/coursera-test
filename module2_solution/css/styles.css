@@ -71,8 +71,8 @@ section {
 }
 
 .chicken > .block-title {
-	background-color: green;
-	color: #white;
+	background-color: #014201;
+	color: #FFFFFF;
 }
 
 .device-switcher-desktop, .device-switcher-tablet, .device-switcher-mobile {
