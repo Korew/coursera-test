@@ -48,7 +48,7 @@ section {
 	padding:45px 15px 15px 15px;
 	background-color: #999999;
 	border: 1px solid #000000;
-  line-height: 150%;
+	line-height: 150%;
 }
 
 .block-title {
@@ -59,7 +59,7 @@ section {
 	border-left: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 	font-size: 125%;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .sushi > .block-title {
