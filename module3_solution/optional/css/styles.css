@@ -1,0 +1,163 @@
+body {
+	background-color: #2D5E82;
+	color: #FFF;
+	font-size: 16px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin: -15px -15px 10px -15px;
+	padding: 15px;
+	text-align: center;
+}
+
+#header-nav {
+	background-color: #cfdfda;
+	border: none;
+	border-radius: 0;
+}
+
+#header-nav .navbar-brand {
+	font-size: 2em;
+}
+
+#header-nav .navbar-toggle {
+	border-color: #4a6c2f;
+	border-radius: 0;
+}
+
+#header-nav .navbar-toggle:hover {
+	background-color: #7cad3e;
+}
+
+#header-nav .navbar-toggle .icon-bar {
+	background-color: #4a6c2f;
+	border-radius: 0;
+}
+
+#collapsable-nav {
+	border: none;
+	text-align: center;
+}
+
+#nav-list {
+	margin-bottom: 0;
+}
+
+#nav-list a {
+	color: #4a6c2f;
+	background-color: #97C1DF;
+}
+
+#nav-list a:hover {
+	color: #7cad3e;
+	background-color: #B9BFE8;
+}
+
+#nav-list a span {
+	font-size: 1.3em;
+	margin-right: 3px;
+}
+
+/* Main content */
+
+section {
+	background-color: #173042;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+#fruits h2 {
+	background-color: #2E8B57;
+}
+
+#coctails h2 {
+	background-color: #008B8B;
+}
+
+#icecream h2 {
+	background-color: #CD6839;
+}
+
+section a {
+	text-decoration: underline;
+	color: #00BFFF;
+}
+
+section a:hover {
+	text-decoration: none;
+	color: #00BFFF;
+}
+
+section a span {
+	font-size: 1.2em;
+	border: 1px solid #00BFFF;
+	border-radius: 50%;
+	padding: 4px 5px 4px 4px;
+	margin-right: 4px;
+}
+
+/* END Main content */
+
+/* Footer */
+footer {
+	background-color: #000;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: .8em
+}
+
+footer a {
+	color: #97C8DF;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #97C8DF;
+	text-decoration: none;
+}
+/* END Footer */
+
+@media (max-width: 767px) {
+	#collapsable-nav {
+		clear: both;
+	}
+}
+
+@media (min-width: 768px) {
+
+	#header-nav .navbar-brand {
+		margin-top: 15px;
+	}
+
+	#header-nav .navbar-header {
+		width: 100%;
+	}
+
+	#collapsable-nav {
+		float: right;
+	}
+
+	#nav-list>li {
+		margin: 5px;
+	}
+
+	#nav-list li:last-child {
+		margin-right: 0;
+	}
+
+	#coctails section {
+		margin: 0 0 15px -15px;
+	}
+	
+}
+
+@media (min-width: 992px) {
+	#coctails section {
+		margin: 0 -15px 15px;
+	}
+}
