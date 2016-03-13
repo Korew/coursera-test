@@ -68,9 +68,15 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   homeHtml, 
   function (responseText) {
-    responseText = insertProperty (responseText, "randomCategoryShortName", "SP")
-    document.querySelector("#main-content")
-      .innerHTML = responseText;
+      $ajaxUtils.sendGetRequest(
+          allCategoriesUrl,
+          function (categories) {
+
+              var rand = categories[Math.floor(Math.random()*categories.length)].short_name;
+              responseText = insertProperty (responseText, "randomCategoryShortName", rand);
+              document.querySelector("#main-content").innerHTML = responseText;
+          });
+
   }, 
   false);
 });
