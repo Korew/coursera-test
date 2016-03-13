@@ -68,6 +68,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   homeHtml, 
   function (responseText) {
+    responseText = insertProperty (responseText, "randomCategoryShortName", "SP")
     document.querySelector("#main-content")
       .innerHTML = responseText;
   }, 
